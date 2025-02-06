@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>Javascript console class
+    </h1>
+    
+
+
+    <h1>Checking Voting eligibility</h1>
+    <button onclick="vote()"> Check</button>
+    <h1 id="result"></h1>
+</body>
+<script>
+
+
+    let a=1,b=0;
+    function sum( num1,num2){
+        num3=num1+num2;
+        console.log("sum of two num are:",num3);
+        
+        
+    }
+    sum(a,b);
+
+    function sub( num1,num2){
+        num3=num1-num2;
+        console.log("subraction of two num are:",num3);
+        
+    }
+    sub(a,b);
+
+    function multiply( num1,num2){
+        num3=num1*num2;
+        console.log("multiplication of two num are:",num3);
+        
+    }
+    multiply(a,b);
+
+    function div( num1,num2){
+        num3=num1*num2;
+        console.log("division of two num are:",num3);
+        
+    }
+    div(a,b);
+
+    function mod( num1,num2){
+        num3=num1%num2;
+        console.log("Modules of two num are:",num3);
+        
+    }
+    div(a,b);
+
+
+
+    if(a>b){
+        console.log("if checks the condition,","the a greater than b is true" , a>b);
+    }
+
+
+    let c=30,d=40;
+    function output(){
+        if(c==d){
+            console.log("the c equals d is:",c==d)
+        }
+        else{
+            console.log("c is not equals to d:",c==d)
+        }
+    }
+    output();
+
+
+    let age=21;
+    function vote(){
+        if(age>=18)
+{
+    console.log("your are Eligible for voting")
+    document.getElementById("result").innerText="you are Eligible for voting";
+}
+
+else{
+    console.log("your are Not Eligible for voting")
+    document.getElementById("result").innerText="you are Not Eligible for voting";
+}
+    }
+    
+
+</script>
+</html>
