@@ -37,6 +37,6 @@ Welcome to my **JavaScript Learning Repository**! Here, I document my progress, 
 If you have any suggestions or want to collaborate, feel free to reach out!
 
 📧 Email: sasidharan0827@gmail.com.com  
-🔗 LinkedIn: [your-linkedin](https://www.linkedin.com/in/k-sasidharan/)
-📂 GitHub: [your-github](https://github.com/your-github)
+🔗 LinkedIn: [https://www.linkedin.com/in/k-sasidharan](https://www.linkedin.com/in/k-sasidharan/)
+📂 GitHub: [https://github.com/your-github](https://github.com/your-github)
 
