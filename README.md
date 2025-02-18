@@ -36,7 +36,7 @@ Welcome to my **JavaScript Learning Repository**! Here, I document my progress, 
 ## 💡 Let's Connect!
 If you have any suggestions or want to collaborate, feel free to reach out!
 
-📧 Email: your.email@example.com  
-🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)  
+📧 Email: sasidharan0827@gmail.com.com  
+🔗 LinkedIn: [your-linkedin](https://www.linkedin.com/in/k-sasidharan/)
 📂 GitHub: [your-github](https://github.com/your-github)
 
