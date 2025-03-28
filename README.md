@@ -27,7 +27,7 @@ Welcome to my **JavaScript Learning Repository**! Here, I document my progress, 
 ## 🔧 Tools & Resources
 - [MDN JavaScript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [JavaScript.info](https://javascript.info/)
-- [Eloquent JavaScript](https://eloquentjavascript.net/)
+
 
 ## 🚀 Projects
 - [Project 1: To-Do List](projects/todo-app.md)
