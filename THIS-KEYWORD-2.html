@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function call using this keyword</title>
+  </head>
+  <body>
+    <h1>
+      open developer tools ---- >> open console to see the otput ---- >> open
+      source ---- >> click on stack to see how the process is going in js ----
+      >>
+    </h1>
+  </body>
+  <script>
+    "use strict"; //----------------------------------------very imprtant
+    //trying to call the function without this
+    function b() {
+      console.log(this);
+    }
+    this.b();
+    //this keyvalue always depend on how the function is called
+    // the function created inside an object is known as method
+
+    let sample = {
+      x: 10,
+      y: function rambo() {
+        console.log(this); // it shows the entire sample object in output why??
+      },
+    };
+    sample.y();
+
+    //this in arrow function
+    let z = () => {
+      console.log(this);
+    };
+    z(); //its returning the global object
+
+    //arrow function inside the object (arrow method)
+    let xyz = {
+      reena: "sales executive",
+      teena: "product manager",
+      meena: "human resource",
+
+      veena: () => {
+        console.log(this); //it also refers the global window object
+        //beacuse of the enclosing lexical content
+        //the enclosing lexical content is nothing but where did you write your code -it determines the scope
+        //let x=10 the value of x the is stick with the x in  global scope
+        //same thing goes for arrow function it does not create a new stack on memory it stick with the existing stack
+      },
+    };
+    xyz.veena();
+
+    //another example
+    let miku = {
+      china: "greatwall",
+      russia: function missile() {
+        const uk = () => {
+          console.log(this);
+        };
+        uk();
+      },
+    };
+    miku.russia(); //the arrow function have the same stack as missile() function has so it checks for the outer block
+    //the use off this keyword depends on the enclosing  lexical context
+
+    //nested arrow function
+    let sang = {
+      fang: "japan",
+      kong: {
+        mang: () => {
+          console.log(this);
+          let wrong = () => {
+            console.log(this);
+          };
+          wrong();
+        },
+      },
+    };
+    sang.kong.mang(); //the output will be window object because the arrow functions does not create any stack
+    // it does not matter how many arrow function inside it stick with thw stack where the variable is created
+  </script>
+</html>
