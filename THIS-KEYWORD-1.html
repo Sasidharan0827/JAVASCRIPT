@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Under standing the "this keyword"</title>
+  </head>
+  <body>
+    <h1>
+      open the console and select the source ,click the stack to see what is
+      happening in the java script
+    </h1>
+  </body>
+  <script>
+    // using the this keyword globally
+    //using this keyword inside function
+    // console.log(this); //it returns the global object window in the console
+    debugger;
+    var x = 20; //this will join towards the global scope so when we use this.x its value will be 20
+    debugger;
+    function a() {
+      debugger;
+      let x = 10; //it has only local scope it can be accessed only within the function,it can be accesed via global object
+      console.log(this); //using inside the function also it shows the global object
+      console.log(this.a); //it can able to reach the function
+      console.log(this.x); //the output will be 20 the x is decalred using var gets printed
+      //it cant able to reach the variable it shows a undefined why ??
+      //  because the variable is declared using let keyword so it has local scope inside the function
+    }
+    a();
+
+    //inside the non strict mode "this" gets subtituted as global object
+    // when we using this the global object is created inside the local object
+    //------------------------------
+  </script>
+</html>
