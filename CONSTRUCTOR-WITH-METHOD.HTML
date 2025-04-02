@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    open developer tools ---- >> open console to see the otput ---- >> open
+    source ---- >> click on stack to see how the process is going in js ---- >>
+  </body>
+  <script>
+    //constructor with functions
+
+    function Group() {
+      this.z = function greet() {
+        console.log("function inside the constructor");
+      };
+    }
+    let a = new Group();
+    a.z();
+    //constructor with return
+    //it does not global object because it has return inside it  so it retuen the object inside the return
+    function Task(msg) {
+      this.z = msg;
+      console.log(this.z);
+      return this.z;
+    }
+    let q = new Task("hii");
+  </script>
+</html>
