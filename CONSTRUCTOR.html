@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      open developer tools ---- >> open console to see the otput ---- >> open
+      source ---- >> click on stack to see how the process is going in js ----
+      >>
+    </h1>
+  </body>
+  <script>
+    //camel case ---------> the first letter of the word is in lower case and the fowwing words first letter starts in capital case
+    //  without having any under score or sapce
+    //  it used in decalaring the variables and methods
+    //------------------------------------------//
+    //pascal case ----------> the first letter of the word starts in upper case and the following words first letter starts in captical case
+    //without having any spacing or unserscore
+    //it is used in declaring the class names and declaring a constructor for better understanding
+
+    //------->>factory function
+    //
+
+    function factory(name, age) {
+      name = name;
+      age = age;
+
+      return {
+        name: name,
+        age: age,
+
+        greet() {
+          console.log(`hii   ${name}   Happy  ${age}`);
+        },
+      };
+    }
+
+    let a = factory("sasi", 23);
+    a.greet();
+
+    //--------constructor
+    //for constructor we have to use the "this" and "new " keyword
+    //the "new keyword crteates a empty object in the memory and put the constructor into the empty object "
+    // the "this keyword returns the global object but in contructor we use "new" keyword so the the empty object is refered as the global object
+    function Con(msg) {
+      this.message = msg;
+      console.log(this.message);
+    }
+    let result = new Con("constructor is working");
+  </script>
+</html>
