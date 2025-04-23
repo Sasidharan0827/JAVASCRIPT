@@ -100,53 +100,6 @@ nodemon was originally written to restart hanging processes such as web servers,
 
 Whilst nodemon is running, if you need to manually restart your application, instead of stopping and restart nodemon, you can type `rs` with a carriage return, and nodemon will restart your process.
 
-## Config files
-
-nodemon supports local and global configuration files. These are usually named `nodemon.json` and can be located in the current working directory or in your home directory. An alternative local configuration file can be specified with the `--config <file>` option.
-
-The specificity is as follows, so that a command line argument will always override the config file settings:
-
-- command line arguments
-- local config
-- global config
-
-A config file can take any of the command line arguments as JSON key values, for example:
-
-```json
-{
-  "verbose": true,
-  "ignore": ["*.test.js", "**/fixtures/**"],
-  "execMap": {
-    "rb": "ruby",
-    "pde": "processing --sketch={{pwd}} --run"
-  }
-}
-```
-
-The above `nodemon.json` file might be my global config so that I have support for ruby files and processing files, and I can run `nodemon demo.pde` and nodemon will automatically know how to run the script even though out of the box support for processing scripts.
-
-A further example of options can be seen in [sample-nodemon.md](https://github.com/remy/nodemon/blob/master/doc/sample-nodemon.md)
-
-### package.json
-
-If you want to keep all your package configurations in one place, nodemon supports using `package.json` for configuration.
-Specify the config in the same format as you would for a config file but under `nodemonConfig` in the `package.json` file, for example, take the following `package.json`:
-
-```json
-{
-  "name": "nodemon",
-  "homepage": "http://nodemon.io",
-  "...": "... other standard package.json values",
-  "nodemonConfig": {
-    "ignore": ["**/test/**", "**/docs/**"],
-    "delay": 2500
-  }
-}
-```
-
-Note that if you specify a `--config` file or provide a local `nodemon.json` any `package.json` config is ignored.
-
-*This section needs better documentation, but for now you can also see `nodemon --help config` ([also here](https://github.com/remy/nodemon/blob/master/doc/cli/config.txt))*.
 
 ## Using nodemon as a module
 
